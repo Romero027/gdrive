@@ -1,6 +1,11 @@
 gdrive
 ======
 
+## NOTE
+
+Install with https://shouts.dev/mount-google-drive-using-gdrive-on-linux-server-with-own-oauth-credentials.
+
+Use `replace google.golang.org/cloud => /users/xzhu/go/pkg/mod/cloud.google.com`
 
 ## Important
 This tool is no longer maintained.
