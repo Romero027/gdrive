@@ -5,7 +5,16 @@ gdrive
 
 Install with https://shouts.dev/mount-google-drive-using-gdrive-on-linux-server-with-own-oauth-credentials.
 
-Use `replace google.golang.org/cloud => /users/xzhu/go/pkg/mod/cloud.google.com`
+Steps:
+1. Install go: https://shouts.dev/install-latest-go-on-centos8-rhel8
+2. `go get github.com/prasmussen/gdrive`
+3. `cd ~/golang/pkg/mod/...`
+4. copy client ID and secret
+5. `go mod init`
+6. Use `replace google.golang.org/cloud => /users/xzhu/golang/pkg/mod/cloud.google.com` in go.mod
+7. go mod tidy
+8. go get golang.org/x/oauth2/google
+9. go build
 
 ## Important
 This tool is no longer maintained.
